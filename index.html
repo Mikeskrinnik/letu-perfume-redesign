@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="Редакционный концепт парфюмерии ЛЭТУАЛЬ. Выбирайте по настроению, бренду и бюджету. Демонстрационный каталог.">
+  <title>Твой аромат. Твои правила. — ЛЭТУАЛЬ</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23efc6d0'/%3E%3Ctext x='7' y='24' font-size='24' font-family='Arial' fill='%23171817'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./refinements.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.4 4.6a5.4 5.4 0 0 0-7.6 0l-.8.8-.8-.8a5.4 5.4 0 0 0-7.6 7.6L12 21l8.4-8.8a5.4 5.4 0 0 0 0-7.6Z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="m5 7-1 14h16L19 7ZM8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 7h9m4 0h3M4 17h3m4 0h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#catalog">Перейти к ароматам</a>
+  <div class="announcement">
+    <span>Твоя следующая любимая история — в одном аромате</span>
+    <span class="demo-mark">Демо-концепт · <a class="source-page-link" href="https://www.letu.ru/browse/parfyumeriya" target="_blank" rel="noopener noreferrer">Исходная страница ↗</a></span>
+  </div>
+  <header class="site-header" id="top">
+    <div class="header-main shell">
+      <button class="icon-button mobile-menu" id="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><svg class="icon"><use href="#i-menu"/></svg></button>
+      <a class="wordmark" href="#top" aria-label="ЛЭТУАЛЬ — в начало">ЛЭТУАЛЬ<span class="wordmark-dot">•</span></a>
+      <form class="search-form" role="search" id="search-form">
+        <label class="sr-only" for="search">Название аромата или бренд</label>
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="search" name="q" type="search" placeholder="Тот самый аромат или бренд" autocomplete="off" enterkeyhint="search">
+        <button class="search-clear icon-button" id="search-clear" type="button" aria-label="Очистить поиск" hidden><svg class="icon"><use href="#i-close"/></svg></button>
+        <span class="search-hint" aria-hidden="true">НАЙТИ СВОЁ</span>
+      </form>
+      <div class="header-actions">
+        <span class="location"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Москва</span>
+        <button class="icon-button header-favorites" id="header-favorites" type="button" aria-label="Показать избранное" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg><span class="count-dot" id="favorites-count" hidden>0</span></button>
+        <button class="icon-button" id="cart-open" type="button" aria-label="Открыть демо-сумку"><svg class="icon"><use href="#i-bag"/></svg><span class="count-dot" id="cart-count" hidden>0</span></button>
+      </div>
+    </div>
+    <nav class="main-nav shell" id="main-nav" aria-label="Основная навигация">
+      <a class="nav-current" href="#catalog" data-reset-catalog>Парфюмерия</a>
+      <a href="#moods">По настроению</a>
+      <a href="#catalog" data-budget-link>До 3 000 ₽</a>
+      <button type="button" data-open-quiz>Найти свой аромат <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <span class="nav-note">ТВОЯ КОЛЛЕКЦИЯ ВПЕЧАТЛЕНИЙ</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="tiny-dot"></span>ПАРФЮМЕРИЯ / ВЫБИРАЙ СЕБЯ</div>
+        <h1 id="hero-title">Твой <em>аромат.</em><br>Твои правила.</h1>
+        <p class="hero-description">Для больших планов и дней без планов.<br>Найди аромат, с которым хочется быть собой.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#catalog">Найти свой аромат <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <button class="text-link" type="button" data-open-quiz>Подобрать по настроению <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="hero-footnote"><span>01 — ТВОЯ НОВАЯ ИСТОРИЯ</span><span class="fine-line"></span><span>НАЧИНАЕТСЯ ЗДЕСЬ</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-placeholder" aria-hidden="true"><span>the art<br>of being you.</span></div>
+        <img class="hero-image" src="./assets/hero.png" alt="Свет сквозь стеклянный флакон на розовом фоне, рядом цветок орхидеи" width="1122" height="1402" fetchpriority="high">
+        <div class="hero-image-note">A SCENT. A FEELING. A YOU.</div>
+        <span class="hero-seal"><span>100%</span><em>ты</em></span>
+        <button class="discovery-pill" type="button" data-open-quiz><span class="pill-orbit" aria-hidden="true"></span><span><small>ЛИЧНОЕ ЗНАКОМСТВО</small>Тот самый — какой он?</span><span class="pill-arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+      </div>
+    </section>
+
+    <div class="editorial-strip shell" aria-label="Идея коллекции"><span>НЕ ПРОСТО АРОМАТ</span><span class="strip-star" aria-hidden="true"></span><span>ТВОЁ НАСТРОЕНИЕ</span><span class="strip-star" aria-hidden="true"></span><span>ТВОЙ ЛИЧНЫЙ ПОЧЕРК</span><span class="strip-star" aria-hidden="true"></span><span>КАЖДЫЙ ДЕНЬ — ПО-НОВОМУ</span></div>
+
+    <section class="moods-section shell" id="moods" aria-labelledby="moods-title">
+      <div class="section-heading mood-heading"><div><span class="eyebrow section-kicker">01 / ПО ЧУВСТВУ</span><h2 id="moods-title">Какое сегодня <em>настроение?</em></h2></div><p class="section-aside">Четыре редакционные подборки.<br>Выбор — всегда за тобой.</p></div>
+      <div class="mood-grid">
+        <button class="mood-card mood-fresh" type="button" data-mood="fresh" aria-pressed="false"><span class="mood-index">01 / НОВОЕ НАЧАЛО</span><span class="mood-art art-fresh" aria-hidden="true"><span></span><i></i></span><span class="mood-bottom"><span>С чистого<br>листа</span><span class="mood-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span></button>
+        <button class="mood-card mood-bold" type="button" data-mood="bold" aria-pressed="false"><span class="mood-index">02 / ТВОЙ МОМЕНТ</span><span class="mood-art art-bold" aria-hidden="true"><span></span><i></i></span><span class="mood-bottom"><span>В центре<br>внимания</span><span class="mood-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span></button>
+        <button class="mood-card mood-soft" type="button" data-mood="soft" aria-pressed="false"><span class="mood-index">03 / БЛИЖЕ К СЕБЕ</span><span class="mood-art art-soft" aria-hidden="true"><span></span><i></i></span><span class="mood-bottom"><span>Нежнее<br>нежного</span><span class="mood-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span></button>
+        <button class="mood-card mood-night" type="button" data-mood="night" aria-pressed="false"><span class="mood-index">04 / ЕЩЁ НЕ ВЕЧЕР</span><span class="mood-art art-night" aria-hidden="true"><span></span><i></i></span><span class="mood-bottom"><span>После<br>заката</span><span class="mood-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span></button>
+      </div>
+      <p class="mood-disclaimer">Настроения — редакционные ассоциации. Состав и характеристики уточняй в оригинальной карточке аромата.</p>
+    </section>
+
+    <section class="catalog-section shell" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading catalog-heading"><div><span class="eyebrow section-kicker">02 / В ТВОЮ КОЛЛЕКЦИЮ</span><h2 id="catalog-title">Влюбиться с первого <em>вдоха.</em></h2></div><span class="catalog-count" id="catalog-count" role="status" aria-live="polite">Загружаем ароматы…</span></div>
+      <div class="catalog-toolbar">
+        <div class="filter-tabs" aria-label="Быстрые фильтры">
+          <button class="filter-tab is-active" id="all-filter" type="button" aria-pressed="true">Все ароматы</button>
+          <button class="filter-tab" id="budget-filter" type="button" aria-pressed="false">До 3 000 ₽</button>
+          <button class="filter-tab" id="favorites-filter" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>Избранное</button>
+          <button class="filter-tab filter-opener" id="filter-open" type="button"><svg class="icon" aria-hidden="true"><use href="#i-filter"/></svg>Фильтры<span id="filter-count" class="filter-count" hidden></span></button>
+        </div>
+        <label class="sort-control"><span class="sr-only">Сортировка ароматов</span><select id="sort"><option value="editorial">Выбор редакции</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option><option value="brand">По бренду А–Я</option></select></label>
+      </div>
+      <div class="active-filters" id="active-filters" aria-label="Применённые фильтры" hidden></div>
+      <div class="product-grid" id="product-grid" aria-busy="true"><div class="catalog-loading">Собираем твою парфюмерную полку…</div></div>
+      <div class="empty-state" id="empty-state" hidden><span class="empty-mark" aria-hidden="true">∅</span><h3>Пока ничего не нашлось</h3><p id="empty-message">Попробуй другой запрос или дай место новым сочетаниям.</p><button class="button button-dark" id="empty-reset" type="button">Сбросить фильтры <svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button></div>
+      <div class="catalog-bottom"><span>У каждого аромата — своя история. У тебя — свой выбор.</span><span>КАТАЛОГ И ЦЕНЫ — ДЕМО</span></div>
+    </section>
+
+    <section class="editorial-band shell" aria-labelledby="editorial-title"><div class="editorial-inner"><div class="editorial-copy"><span class="eyebrow">БЫТЬ СОБОЙ — ПО-РАЗНОМУ</span><h2 id="editorial-title">Можно быть разной.<br>Аромат — <em>под настроение.</em></h2><p>Один на каждый день или целая коллекция впечатлений.<br>Здесь нет правильного выбора. Есть твой.</p><a class="button button-dark" href="#moods">Начать с настроения <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><div class="editorial-art" aria-hidden="true"><span class="art-circle"></span><span class="art-type">mood<br><em>of you.</em></span><span class="art-caption">МЕНЯЙ НАСТРОЕНИЕ.<br>ОСТАВАЙСЯ СОБОЙ.</span><span class="art-star"></span></div></div></section>
+  </main>
+
+  <footer class="site-footer shell"><div class="footer-top"><a class="wordmark" href="#top" aria-label="ЛЭТУАЛЬ — в начало">ЛЭТУАЛЬ<span class="wordmark-dot">•</span></a><p>У красоты есть характер.<br>Твой.</p><nav aria-label="Навигация в подвале"><a href="#catalog" data-reset-catalog>Все ароматы</a><a href="#moods">По настроению</a><button class="text-link" type="button" data-open-quiz>Подобрать аромат ↗</button></nav><a class="back-top" href="#top">Наверх <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><div class="footer-bottom"><p>Концепт редизайна. Демонстрационный каталог и цены; наличие и стоимость уточняйте на <a href="https://www.letu.ru/browse/parfyumeriya" target="_blank" rel="noopener noreferrer">letu.ru</a>.</p><span>ЛОКАЛЬНЫЙ ПРОТОТИП / 2026</span></div></footer>
+
+  <dialog class="quick-dialog" id="quick-dialog" aria-labelledby="quick-title"><button class="dialog-close icon-button" type="button" data-close-dialog aria-label="Закрыть быстрый просмотр"><svg class="icon"><use href="#i-close"/></svg></button><div id="quick-content"></div></dialog>
+  <dialog class="side-dialog" id="filter-dialog" aria-labelledby="filter-title"><div class="drawer-heading"><div><span class="eyebrow">ТОЧНЕЕ О ТВОЁМ</span><h2 id="filter-title">Твой выбор</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Закрыть фильтры"><svg class="icon"><use href="#i-close"/></svg></button></div><form id="filter-form" class="drawer-form"><div class="drawer-body"><fieldset class="budget-fieldset"><legend>Бюджет</legend><label for="max-price">Демо-цена до</label><div class="price-input"><input id="max-price" name="maxPrice" type="number" min="0" max="1000000" step="1" inputmode="numeric" placeholder="Без ограничений"><span>₽</span></div><p class="field-note">Оставь поле пустым, чтобы смотреть все цены.</p></fieldset><fieldset class="brand-fieldset"><legend>Бренд</legend><div class="brand-options" id="brand-options"></div></fieldset></div><div class="drawer-footer"><button class="button button-dark" id="filter-apply" type="submit">Показать ароматы <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button class="text-link" id="filter-reset" type="button">Сбросить всё</button></div></form></dialog>
+  <dialog class="side-dialog cart-dialog" id="cart-dialog" aria-labelledby="cart-title"><div class="drawer-heading"><div><span class="eyebrow">ТВОЯ КОЛЛЕКЦИЯ</span><h2 id="cart-title">Демо-сумка <span id="cart-title-count">/ 0</span></h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Закрыть демо-сумку"><svg class="icon"><use href="#i-close"/></svg></button></div><p class="cart-disclosure">Это локальная демо-сумка. Оформление и оплата недоступны.</p><div class="cart-items" id="cart-items"></div><div class="cart-summary" id="cart-summary" hidden><div><span>Итого, демо</span><strong id="cart-total"></strong></div><p>Реальную стоимость и наличие уточняй на сайте ЛЭТУАЛЬ.</p><button class="button button-dark" type="button" data-close-dialog>Продолжить выбирать <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div></dialog>
+  <dialog class="quiz-dialog" id="quiz-dialog" aria-labelledby="quiz-title"><button class="dialog-close icon-button" type="button" data-close-dialog aria-label="Закрыть подбор по настроению"><svg class="icon"><use href="#i-close"/></svg></button><div class="quiz-content" id="quiz-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript-note">Для поиска, просмотра каталога и демо-сумки включи JavaScript. <a href="https://www.letu.ru/browse/parfyumeriya">Открыть каталог ЛЭТУАЛЬ</a></p></noscript>
+  <script type="application/json" id="product-data">[{"id":"1297","brand":"LANVIN","name":"Eclat D'Arpege","price":3048,"volume":"30  50  мл","image":"./assets/1297.jpg","url":"https://www.letu.ru/product/lanvin-eclat-d-arpege/1297","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/10/GT_ce898fe7-9202-4c83-a129-024c0340ef13.jpg","mood":"fresh","priceMode":"demo"},{"id":"5000057","brand":"VERSACE","name":"Bright Crystal","price":4864,"volume":"30  50  90  мл","image":"./assets/5000057.jpg","url":"https://www.letu.ru/product/versace-bright-crystal/5000057","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2025/05/GT_ed757972-fadd-4c33-a626-36d1e902fa3c.jpg","mood":"soft","priceMode":"demo"},{"id":"96100006","brand":"SHISEIDO","name":"Ginza","price":4230,"volume":"30  50  90  мл","image":"./assets/96100006.jpg","url":"https://www.letu.ru/product/shiseido-ginza/96100006","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/10/GT_6bb7bd35-f53d-4180-ab06-350755b1fedb.jpg","mood":"bold","priceMode":"demo"},{"id":"11805","brand":"DOLCE&GABBANA","name":"L'Imperatrice Eau de Toilette","price":2946,"volume":"10  50  мл","image":"./assets/11805.jpg","url":"https://www.letu.ru/product/dolce-gabbana-l-imperatrice-eau-de-toilette/11805","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/07/GT_ca390898-091b-465d-8320-965f866b516d.jpg","mood":"night","priceMode":"demo"},{"id":"47000008","brand":"ZADIG&VOLTAIRE","name":"This Is Her","price":5980,"volume":"30  50  100  мл","image":"./assets/47000008.jpg","url":"https://www.letu.ru/product/zadig-voltaire-this-is-her/47000008","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/05/GT_82513a50-e2da-4d70-a21c-4bc32735b38c.jpg","mood":"fresh","priceMode":"demo"},{"id":"1900002","brand":"TRUSSARDI","name":"Delicate Rose","price":4619,"volume":"30  50  100  мл","image":"./assets/1900002.jpg","url":"https://www.letu.ru/product/trussardi-delicate-rose/1900002","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/05/GT_a391c804-22bb-4341-9abd-f87e17a38c28.jpg","mood":"soft","priceMode":"demo"},{"id":"61000029","brand":"GENTY","name":"MUST-HAVE White Tee","price":799,"volume":"Объём — на сайте","image":"./assets/61000029.jpg","url":"https://www.letu.ru/product/must-have-white-tee/61000029","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/10/GT_bfc41b5f-be38-432c-82f0-eadbc1631eab.jpg","mood":"bold","priceMode":"demo"},{"id":"46700013","brand":"LANVIN","name":"Modern Princess","price":4137,"volume":"30  60  90  мл","image":"./assets/46700013.jpg","url":"https://www.letu.ru/product/lanvin-modern-princess/46700013","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/04/GT_60641522-a94c-4980-9319-9357ea6ce208.jpg","mood":"night","priceMode":"demo"},{"id":"178500098","brand":"ЛЭТУАЛЬ","name":"Belochka","price":1799,"volume":"Объём — на сайте","image":"./assets/178500098.jpg","url":"https://www.letu.ru/product/russie-belochka/178500098","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/11/GT_e144e51e-4613-4722-ac36-5cf38422c5e4.jpg","mood":"fresh","priceMode":"demo"},{"id":"142500399","brand":"DOLCE&GABBANA","name":"Devotion","price":3457,"volume":"10  20  30  мл  50 мл  100 мл","image":"./assets/142500399.jpg","url":"https://www.letu.ru/product/dolce-gabbana-devotion/142500399","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/11/GT_ef82a09f-982f-4fab-8b56-316c17d133c1.jpg","mood":"soft","priceMode":"demo"},{"id":"165200014","brand":"SHISEIDO","name":"Ginza Night","price":4455,"volume":"30  50  90  мл","image":"./assets/165200014.jpg","url":"https://www.letu.ru/product/shiseido-ginza-night/165200014","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/10/GT_958aab7e-dfd9-4189-8fff-a577ddfda1b8.jpg","mood":"bold","priceMode":"demo"},{"id":"175600046","brand":"JIMMY CHOO","name":"I Want Choo With Love","price":5599,"volume":"40  60  100  мл","image":"./assets/175600046.jpg","url":"https://www.letu.ru/product/jimmy-choo-i-want-choo-with-love/175600046","sourceImageUrl":"https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/11/GT_8d178afd-c483-4bfc-a792-4df18f144970.jpg","mood":"night","priceMode":"demo"}]</script>
+</body>
+</html>

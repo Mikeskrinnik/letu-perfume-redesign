@@ -1,0 +1,72 @@
+{
+  "retrievedAt": "2026-11-16T16:57:26.361Z",
+  "source": "https://www.letu.ru/browse/parfyumeriya",
+  "disclosure": "Local design concept. Product identities and packshots from LETU; prices copied for demo only. Mood groupings are editorial examples, not verified olfactory descriptions.",
+  "hero": {
+    "kind": "AI-generated editorial illustration",
+    "model": "built-in image_gen",
+    "image": "assets/hero.png"
+  },
+  "products": [
+    {
+      "id": "1297",
+      "url": "https://www.letu.ru/product/lanvin-eclat-d-arpege/1297",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/10/GT_ce898fe7-9202-4c83-a129-024c0340ef13.jpg"
+    },
+    {
+      "id": "5000057",
+      "url": "https://www.letu.ru/product/versace-bright-crystal/5000057",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2025/05/GT_ed757972-fadd-4c33-a626-36d1e902fa3c.jpg"
+    },
+    {
+      "id": "96100006",
+      "url": "https://www.letu.ru/product/shiseido-ginza/96100006",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/10/GT_6bb7bd35-f53d-4180-ab06-350755b1fedb.jpg"
+    },
+    {
+      "id": "11805",
+      "url": "https://www.letu.ru/product/dolce-gabbana-l-imperatrice-eau-de-toilette/11805",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/07/GT_ca390898-091b-465d-8320-965f866b516d.jpg"
+    },
+    {
+      "id": "47000008",
+      "url": "https://www.letu.ru/product/zadig-voltaire-this-is-her/47000008",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/05/GT_82513a50-e2da-4d70-a21c-4bc32735b38c.jpg"
+    },
+    {
+      "id": "1900002",
+      "url": "https://www.letu.ru/product/trussardi-delicate-rose/1900002",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/05/GT_a391c804-22bb-4341-9abd-f87e17a38c28.jpg"
+    },
+    {
+      "id": "61000029",
+      "url": "https://www.letu.ru/product/must-have-white-tee/61000029",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/10/GT_bfc41b5f-be38-432c-82f0-eadbc1631eab.jpg"
+    },
+    {
+      "id": "46700013",
+      "url": "https://www.letu.ru/product/lanvin-modern-princess/46700013",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/04/GT_60641522-a94c-4980-9319-9357ea6ce208.jpg"
+    },
+    {
+      "id": "178500098",
+      "url": "https://www.letu.ru/product/russie-belochka/178500098",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/11/GT_e144e51e-4613-4722-ac36-5cf38422c5e4.jpg"
+    },
+    {
+      "id": "142500399",
+      "url": "https://www.letu.ru/product/dolce-gabbana-devotion/142500399",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/11/GT_ef82a09f-982f-4fab-8b56-316c17d133c1.jpg"
+    },
+    {
+      "id": "165200014",
+      "url": "https://www.letu.ru/product/shiseido-ginza-night/165200014",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/10/GT_958aab7e-dfd9-4189-8fff-a577ddfda1b8.jpg"
+    },
+    {
+      "id": "175600046",
+      "url": "https://www.letu.ru/product/jimmy-choo-i-want-choo-with-love/175600046",
+      "image": "https://i.letu.ru/imo/transform/profile=w180/common/img/pim/2026/11/GT_8d178afd-c483-4bfc-a792-4df18f144970.jpg"
+    }
+  ]
+}
